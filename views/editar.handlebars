@@ -1,0 +1,25 @@
+<h3>Editar Produto: </h3>
+<div class="card">
+    <div class="card-body">
+        <form action="/editar/{{id}}" method="POST">
+            <input type="hidden" name="id" value="{{id}}">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome_produto" id="nome_produto" placeholder="Nome da produto" class="form-control"
+                value="{{produto.nome_produto}}">
+            <label for="descricao_produto">Descrição do Produto</label>
+            <input type="text" name="descricao_produto" id="descricao_produto" placeholder="descricao"
+                class="form-control" value="{{produto.descricao_produto}}">
+            <label for="valor_produto">Valor do Produto:</label>
+            <input type="number" id="valor_produto" name="valor_produto" value="{{produto.valor_produto}}" step="0.01"
+                class="form-control" required><br><br>
+            <label for="status_produto">Disponível para Venda:</label>
+            <select id="status_produto" name="status_produto" class="form-select form-select-lg mb-3"
+                aria-label=".form-select-lg example" required>
+                <option>{{produto.status_produto}}</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select><br><br>
+            <button type="submit" class="btn btn-success">Editar categoria</button>
+        </form>
+    </div>
+</div>
