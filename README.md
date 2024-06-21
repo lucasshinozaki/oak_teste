@@ -1,4 +1,4 @@
-### README - Sistema de Gestão de Produtos
+###Sistema de Gestão de Produtos
 
 Este é um sistema de gestão de produtos desenvolvido com Node.js e Express, utilizando Handlebars como template engine e Body Parser para processamento de formulários.
 
