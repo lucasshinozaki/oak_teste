@@ -27,7 +27,7 @@ npm install body-parser express express-handlebars handlebars
 
 2. **Execução da Aplicação**
 
-   - Execute `npm start` para iniciar o servidor.
+   - Execute `node app.js` para iniciar o servidor.
    - Acesse a aplicação através do navegador no endereço `http://localhost:8000`.
 
 #### Tecnologias Utilizadas
